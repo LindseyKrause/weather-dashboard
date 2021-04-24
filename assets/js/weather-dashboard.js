@@ -24,8 +24,8 @@ function searchWeather(cityName) {
 
 }
 function drawWeather(d) {
-
-	document.getElementById('returnColumn').innerHTML = d.weather[0].description;
+let returnColumn = document.getElementById('returnColumn');
+	returnColumn.innerHTML = d.weather[0].description + "Temp" + d.main.temp + "Feels Like" + d.main.feels_like + "Temp Min" + d.main.temp_min + "Temp Max" + d.main.temp_max;
 	// document.getElementById('returnColumn').innerHTML = d.name;
 	// document.getElementById('returnColumn').innerHTML = d.main.temp;
 	// document.getElementById('returnColumn').innerHTML = d.main.feels_like;

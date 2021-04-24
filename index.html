@@ -22,45 +22,150 @@
                 <h1>Weather Dashboard</h1>
             </header>
         </div>
-        <div class="col-sm-3" id="searchColumn">
-            <h2>Search for a City:</h2>
-            <input type="text" placeholder="type a city" id="userSearch"></input>
-            <button id="searchButton">Search</button>
-        </div>
-        <div class="col-sm-9" id="returnColumn">
-            <div class="row" id="todayRow">
+        <div class="row" id="contentRow">
+            <div class="col-sm-3" id="searchColumn">
+                <div class="row border-bottom" id="userSearchRow">
+                    <h2>Search for a City:</h2>
+                    <input class="border-bottom border-top" type="text" placeholder="type a city" id="userSearch"></input>
+                    <button class= "btn btn-primary border-bottom border-top" id="searchButton">Search</button>
+                </div>
+                <div class="row border-top" id="localStorageRow">
+                    <div class="d-grid gap-2 col-lg-1 mx-auto mw-100">
+                        <button class="btn btn-primary border-bottom border-top" type="button">Button</button>
+                        <button class="btn btn-primary border-bottom border-top" type="button">Button</button>
+                    </div>
+                </div>
 
             </div>
-            <div class="row" id="fiveDayRow">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8" id="returnColumn">
+                <div class="row" id="todayRow">
+                    <div class="col-sm-4" id="todayImgCol">
+                        <figure class="figure">
+                            <img src="..." class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-8" id="todayTextCol">
+                        <div class="row">
+                            <h1 id="cityHeading"> Example City Heading </h1>
+                        </div>
+                        <div class="col">
+                            <div class="row" id="tempRow">
+                                <h3 id="temp">Temp:</h3>
+                            </div>
+                            <div class="row" id="humidityRow">
+                                <h3 id="humidity">Humidity:</h3>
+                            </div>
+                            <div class="row" id="WindRow">
 
+                                <h3 id="windSpeed">Wind Speed:</h3>
+                            </div>
+                            <div class="row" id="uvRow">
+
+                                <h3 id="uv">UV Index:</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="fiveDayRow">
+                    <h2>5-Day Forecast</h2>
+                </div>
+                <div class="row" id="fiveDayBoxRow">
+                    <div class="col-2" id="dayOne">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="dayTwo">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="dayThree">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="dayFour">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="dayFive">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
+
+
+
+
+
+
+
+
+
         </div>
+        <!--script files-->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-    </div>
-    <!--script files-->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/weather-dashboard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/weather-dashboard.js"></script>
 
 </body>
 
