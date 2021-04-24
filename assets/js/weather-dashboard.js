@@ -8,7 +8,7 @@ $("#searchButton").click(function () {
 	console.log(userInput.value);
 	searchWeather(userInput.value);
 })
-function searchWeather (cityName){
+function searchWeather(cityName) {
 	fetch(
 		`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3f8b7d7282213e928cf632d579aeff2d&units=imperial`
 	)
@@ -16,20 +16,23 @@ function searchWeather (cityName){
 			return response.json();
 		}).then(data => {
 			console.log(data);
+			drawWeather(data);
 		})
 		.catch(err => {
 			console.error(err);
 		});
-	
+
+}
+function drawWeather(d) {
+
+	document.getElementById('returnColumn').innerHTML = d.weather[0].description;
+	// document.getElementById('returnColumn').innerHTML = d.name;
+	// document.getElementById('returnColumn').innerHTML = d.main.temp;
+	// document.getElementById('returnColumn').innerHTML = d.main.feels_like;
+
+
 }
 
 
 
 
-	// 	response.text().then(function(text) {
-	// 		cityDisplay.textContent = text;
-	// 	})
-
-	// .then(function (data) {
-	// 	console.log(data);
-	// })
