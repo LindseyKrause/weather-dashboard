@@ -1,0 +1,9 @@
+.gradient {
+    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%) !important;
+}
+header {
+    width: max-content;
+}
+.classWithPad {
+    margin:32px; padding:32px;
+}

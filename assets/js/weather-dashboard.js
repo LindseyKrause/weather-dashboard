@@ -35,6 +35,8 @@ function drawWeather(d) {
 	let wind = document.getElementById('windSpeed');
 	wind.textContent = "Wind: " + d.wind.speed;
 	let uv = document.getElementById('uv');
+	// let imgContText = document.querySelector("#todayImgCol .figure-caption");
+	// imgContText.textContent = d.weather[0].description;
 	let imgCont = document.querySelector("#todayImgCol .figure");
 	imgCont.innerHTML = "";
 	let img = document.createElement('img');

@@ -11,118 +11,125 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
         integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
     <title>Weather Dashboard</title>
 </head>
 <!--body-->
 
 <body>
-    <div class="container">
+    <div class="container-fluid gradient">
         <div class="row" id="title">
             <header>
                 <h1>Weather Dashboard</h1>
             </header>
         </div>
+    </div>
+    <div class="container">
+
         <div class="row" id="contentRow">
             <div class="col-sm-3" id="searchColumn">
                 <div class="row border-bottom" id="userSearchRow">
                     <h2>Search for a City:</h2>
-                    <input class="border-bottom border-top" type="text" placeholder="type a city" id="userSearch"></input>
-                    <button class= "btn btn-primary border-bottom border-top" id="searchButton">Search</button>
+                    <input class="border-bottom border-top" type="text" placeholder="type a city"
+                        id="userSearch"></input>
+                    <button class="btn btn-primary border-bottom border-top" id="searchButton">Search</button>
                 </div>
                 <div class="row border-top" id="localStorageRow">
-                    <div class="d-grid gap-2 col-lg-1 mx-auto mw-100">
-                        <button class="btn btn-primary border-bottom border-top" type="button">Button</button>
-                        <button class="btn btn-primary border-bottom border-top" type="button">Button</button>
-                    </div>
+                    <!-- <div class="d-grid gap-2 col-lg-1 mx-auto mw-100"> -->
+                    <button class="btn btn-primary border-bottom border-top btn-lg btn-block"
+                        type="button">Button</button>
+                    <button class="btn btn-primary border-bottom border-top btn-lg btn-block"
+                        type="button">Button</button>
+                    <!-- </div> -->
                 </div>
 
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-8" id="returnColumn">
-                <div class="row" id="todayRow">
-                    <div class="col-sm-4" id="todayImgCol">
-                        <figure class="figure">
-                            <!-- <img src="..." class="figure-img img-fluid rounded" alt="..."> -->
-                            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-8" id="todayTextCol">
-                        <div class="row">
-                            <h1 id="cityHeading"></h1>
+            <div class="col-sm-9" id="returnColumn">
+                <div class="classWithPad">
+                    <div class="row" id="todayRow">
+                        <div class="col-sm-4" id="todayImgCol">
+                            <figure class="figure">
+                                <!-- <img src="..." class="figure-img img-fluid rounded" alt="..."> -->
+                                <figcaption class="figure-caption"></figcaption>
+                            </figure>
                         </div>
-                        <div class="col">
-                            <div class="row" id="tempRow">
-                                <h3 id="temp">Temp:</h3>
+                        <div class="col-sm-8" id="todayTextCol">
+                            <div class="row">
+                                <h1 id="cityHeading"></h1>
                             </div>
-                            <div class="row" id="humidityRow">
-                                <h3 id="humidity">Humidity:</h3>
-                            </div>
-                            <div class="row" id="WindRow">
+                            <div class="col">
+                                <div class="row" id="tempRow">
+                                    <h3 id="temp">Temp:</h3>
+                                </div>
+                                <div class="row" id="humidityRow">
+                                    <h3 id="humidity">Humidity:</h3>
+                                </div>
+                                <div class="row" id="WindRow">
 
-                                <h3 id="windSpeed">Wind Speed:</h3>
-                            </div>
-                            <div class="row" id="uvRow">
+                                    <h3 id="windSpeed">Wind Speed:</h3>
+                                </div>
+                                <div class="row" id="uvRow">
 
-                                <h3 id="uv">UV Index:</h3>
+                                    <h3 id="uv">UV Index:</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row" id="fiveDayRow">
-                    <h2>5-Day Forecast</h2>
-                </div>
-                <div class="row" id="fiveDayBoxRow">
-                    <div class="col-2" id="dayOne">
-                        <div class="card">
-                            <img class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title" id="cardTitleId1"></h5>
-                                <p class="card-text" id="cardTextId1"></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="row" id="fiveDayRow">
+                        <h2>5-Day Forecast</h2>
+                    </div>
+                    <div class="row" id="fiveDayBoxRow">
+                        <div class="col-2" id="dayOne">
+                            <div class="card">
+                                <img class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="cardTitleId1"></h5>
+                                    <p class="card-text" id="cardTextId1"></p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2" id="dayTwo">
+                            <div class="card">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                    <h5 class="card-title" id="cardTitleId2"></h5>
+                                    <p class="card-text" id="cardTextId2"></p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2" id="dayThree">
+                            <div class="card">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                    <h5 class="card-title" id="cardTitleId3"></h5>
+                                    <p class="card-text" id="cardTextId3"></p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2" id="dayFour">
+                            <div class="card">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                    <h5 class="card-title" id="cardTitleId4"></h5>
+                                    <p class="card-text" id="cardTextId4"></p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2" id="dayFive">
+                            <div class="card">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                    <h5 class="card-title" id="cardTitleId5"></h5>
+                                    <p class="card-text" id="cardTextId5"></p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-2" id="dayTwo">
-                        <div class="card">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <h5 class="card-title" id="cardTitleId2"></h5>
-                                <p class="card-text" id="cardTextId2"></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2" id="dayThree">
-                        <div class="card">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <h5 class="card-title" id="cardTitleId3"></h5>
-                                <p class="card-text" id="cardTextId3"></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2" id="dayFour">
-                        <div class="card">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <h5 class="card-title" id="cardTitleId4"></h5>
-                                <p class="card-text" id="cardTextId4"></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2" id="dayFive">
-                        <div class="card">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <h5 class="card-title" id="cardTitleId5"></h5>
-                                <p class="card-text" id="cardTextId5"></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
