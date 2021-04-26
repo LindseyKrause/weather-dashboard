@@ -16,7 +16,7 @@ A Weather Dashboard to see conditions in city user specifies
 * openweathermap api
 
 ## Website
-
+ https://lindseykrause.github.io/weather-dashboard/
 
 ## Issues
 Subsequent versions of the app will require 
