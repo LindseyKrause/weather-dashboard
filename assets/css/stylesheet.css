@@ -5,5 +5,34 @@ header {
     width: max-content;
 }
 .classWithPad {
-    margin:32px; padding:32px;
+    margin:0px; padding:32px;
+    width: 100%;
+}
+.first-color { 
+	background: #e0ffcd; 
+}
+	
+.second-color { 
+	background: #fdffcd; 
+}
+
+.third-color { 
+	background: #ffebbb; 
+}
+
+.fourth-color { 
+	background: #ffcab0; 
+}
+.card {
+    font-size: xx-small;
+    min-width: 100px;
+    max-width: 100%;
+}
+.card-title {
+    font-size: x-small;
+}
+.figure-caption {
+    color: aqua;
+    font-size: xx-large;
+    font: small-caption;
 }
