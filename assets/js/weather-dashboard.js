@@ -17,7 +17,7 @@ $("#searchButton").click(function () {
 })
 function searchWeather(cityName) {
 	fetch(
-		`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3f8b7d7282213e928cf632d579aeff2d&units=imperial`
+		`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=3f8b7d7282213e928cf632d579aeff2d&units=imperial`
 	)
 		.then(response => {
 			return response.json();
@@ -52,7 +52,7 @@ console.log("hello" + figCaption.textContent);
 }
 function searchWeather5day(cityName) {
 	fetch(
-		`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=deccf4a9d1ad781cea56007a1e378a5a&cnt=5&units=imperial`
+		`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=deccf4a9d1ad781cea56007a1e378a5a&cnt=5&units=imperial`
 	)
 		.then(response => {
 			return response.json();
@@ -126,24 +126,6 @@ function searchWeather5day(cityName) {
 
 }
 
-
-// let cardDiv = document.getElementById("dayOne");
-// let createCard = document.createElement('div');
-// createCard.className = 'card';
-// let createCardBody = document.createElement('div');
-// createCardBody.className = 'card-body';
-// let createCardTitle = document.createElement('h5');
-// createCardTitle.className = 'card-title';
-// createCardTitle.innerText = d.city.name;
-// let createCardP = document.createElement('p');
-// createCardP.className = 'card-text';
-// let createCardBtn = document.createElement('button');
-// createCardBtn.className = 'btn btn-primary';
-
-// cardDiv.appendChild(createCard, createCardBody);
-// createCardBody.appendChild(createCardTitle, );
-// createCardTitle.textContent = "this is something";
-// createCardP.textContent = 'this is example text'
 
 
 
